@@ -5,27 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
 
+<!-- fontawesome link-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- fontawesome link-->
+
+<!-- Google Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google Font Lato -->
+    <link rel="stylesheet" href="style.css">
+
 <!-- Tailwind and Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 <!-- Tailwind and Daisy UI -->
 
-<!-- config -->
+<!-- custom color -->
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-bg':'#F85559',
+                'primary-text-color':'#12121299',
               }
             }
           }
         }
       </script>
-<!-- config -->
+<!-- custom color -->
 
 </head>
 <body>
     
+  <!-- Header -->
+    <header class="container mx-auto mt-[30px]">
+  
+    <!-- Nav -->
+    <nav>
+
+        <div class="navbar bg-primary-bg rounded-full ">
+          <div class="navbar-start">
+            <div class="dropdown">
+              
+                <!-- Hamburg icon -->
+                <label tabindex="0" class="btn btn-ghost lg:hidden ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </label>
+                <!-- Hamburg icon -->
+
+              
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[18px] font-[500] text-black lg:text-[#FFF] ">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[18px] font-[500] text-[#FFF]">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Logo -->
+          <div class="navbar-start md:navbar-center items-center gap-3 ">
+              <img src="./images/logo.png" alt="">
+              <p class="text-4xl text-[#FFF] font-bold">Fruit Burst</p>
+          </div>
+          <!-- Logo end -->
+
+          <!-- Search  -->
+          <div class="navbar-end hidden lg:flex">
+            <input type="search" placeholder="search here" name="" id="" class=" outline-none  rounded-full text-[16px] font-[500] text-[#121212] p-2 pr-52 mr-[30px] relative">
+            <i class="fa-solid fa-magnifying-glass text-[22px] absolute mr-[60px] "></i>
+          </div>
+          <!-- Search End -->
+
+        </div>
+
+      </nav>
+    <!-- Nav -->
+
+    </header>
+  <!-- Header end-->
+
+    <!-- Main Section -->
+    <main></main>
+    <!-- Main Section -->
+    
+    <!-- Footer Section -->
+    <footer></footer>
+    <!-- Footer section end-->
+
 </body>
 </html>
