@@ -49,55 +49,76 @@
     <header class="container mx-auto mt-[20px]">
   
     <!-- Nav -->
-    <nav>
-
-        <div class="navbar bg-primary-bg rounded-full ">
-          <div class="navbar-start">
-            <div class="dropdown">
+        <div class="navbar bg-[#fff] lg:bg-primary-bg rounded-full my-[40px] lg:py-[20] justify-between px-0 lg:px-[32px] flex flex-row-reverse lg:flex-row">
+            <div class="lg:hidden">
               
-                <!-- Hamburg icon -->
-                <label tabindex="0" class="btn btn-ghost lg:hidden ">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-                </label>
-                <!-- Hamburg icon -->
+                <div class="dropdown">
+                    <div class="dropdown dropdown-end">
+                        <!-- HAmburg Icon -->
+                        <label tabindex="0" class="btn btn-ghost rounded-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                              </svg>
+                        </label>
+                        <!-- HAmburg Icon -->
+                        
+                        <!-- menus -->
+                        <ul tabindex="0" class="menu dropdown-content z-[1] p-[8px] shadow bg-base-100 rounded-box w-40 mt-[16px] bg-primary-bg text-white">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                       
+                        <div>  
+                            <!-- button -->
+                            <button>
+                                <input type="text" placeholder="Search here" class="input w-[800px] rounded-full" />
+                            </button>
+                            <!-- button -->
 
-              
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[18px] font-[500] text-black lg:text-[#FFF] ">
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
+                                <div class="btn btn-ghost btn-circle absolute -ml-14">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                      </svg>
+
+                                </div>
+                            </div>
+                        </ul>
+                        <!-- menus -->
+                    </div>
+                </div>
             </div>
-
+            <!-- menus -->
             <div class="hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-[18px] font-[500] text-[#FFF]">
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
+                <ul class="menu menu-horizontal px-[4px] text-white font-[500]">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
             </div>
-          </div>
+            <!-- menus -->
 
-          <!-- Logo -->
-          <div class="navbar-start md:navbar-center items-center gap-3 ">
-              <img src="./images/logo.png" alt="">
-              <p class="text-4xl text-[#FFF] font-bold">Fruit Burst</p>
-          </div>
-          <!-- Logo end -->
+            <div class="gap-3">
+                <img src="images/logo.png" alt="">
+                <h3 class="text-4xl lg:text-white font-bold">Fruit Burst</h3>
+            </div>
 
-          <!-- Search  -->
-          <div class="navbar-end hidden lg:flex">
-            <input type="search" placeholder="search here" name="" id="" class=" outline-none  rounded-full text-[16px] font-[500] text-[#121212] p-2 pr-52 mr-[30px] relative">
-            <i class="fa-solid fa-magnifying-glass text-[22px] absolute mr-[60px] "></i>
-          </div>
-          <!-- Search End -->
+            <div class="hidden lg:block">
+                <button>
+                    <input type="text" placeholder="Search here" class="input w-full rounded-full" />
+                </button>
 
+                <div class="btn btn-ghost btn-circle absolute -ml-14">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+            </div>
         </div>
-
-    </nav>
     <!-- Nav end-->
 
     <!-- banner section -->
@@ -217,7 +238,6 @@
             </div>
         </div> 
         <!-- slide 04-->  
-       
         </div>
         <!-- slider or Carousel end-->
 
@@ -655,7 +675,7 @@
             <!-- content -->
               <div class="space-y-2">
                 <h2 class="text-black text-2xl font-extrabold">Dedicated Team</h2>
-                <div class="w-1/2 border-b-2 border-black"></div>
+                <div class="w-1/2 border-b-2 border-gray-400"></div>
                 <p class="text-primary-text-color text-[16px] font-[600]">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
             <!-- content end -->
@@ -671,7 +691,7 @@
                 <!-- content -->
                   <div class="space-y-2">
                     <h2 class="text-black text-2xl font-extrabold">Fresh is Best</h2>
-                    <div class="w-1/2 border-b-2 border-black"></div>
+                    <div class="w-1/2 border-b-2 border-gray-400"></div>
                     <p class="text-primary-text-color text-[16px] font-[600]">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
                  </div>
                 <!-- content end -->
@@ -760,7 +780,7 @@
 
         </div>
 
-      </section>
+     </section>
      <!--  Choose Us section end-->
      
 
